@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0"
+    android:orientation="vertical"
+    tools:context="com.example.lijun.customanimationdemo.MainActivity">
+        <Button
+            android:id="@+id/left_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左右动画"/>
+
+        <Button
+            android:id="@+id/up_down_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上下动画"/>
+
+        <Button
+            android:id="@+id/scale_self_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自己的应用缩放动画(5.0及以上)"/>
+
+        <Button
+            android:id="@+id/custom_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自己的应用缩放动画（不受版本影响）" />
+
+        <Button
+            android:id="@+id/exit_close_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自己的应用，退出回到中心"/>
+
+        <Button
+            android:id="@+id/scale_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三方应用和系统应用缩放动画(4.1及以上)"/>
+
+        <Button
+            android:id="@+id/scale_btn_lollipop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三方应用和系统应用缩放动画(5.0及以上)"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ActivityAnimator" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenExitAnimation">@anim/acitivity_open_exit_anim</item>
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter_left_right_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter_left_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit_left_anim</item>
+    </style>
+
+    <style name="AppThemeV2" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimator</item>
+    </style>
+
+    <style name="Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="activity_close_exit_anim">
+        <item name="android:windowEnterAnimation">@anim/activity_open_enter_left_right_anim</item>
+        <item name="android:windowExitAnimation">@anim/acitivity_open_exit_anim</item>
+        <item name="android:windowShowAnimation">@anim/activity_close_enter_left_anim</item>
+        <item name="android:windowHideAnimation">@anim/activity_close_enter_left_anim</item>
+    </style>
+
+
+</resources>
